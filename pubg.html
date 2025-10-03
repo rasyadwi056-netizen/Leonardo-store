@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TopUp PUBG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TopUp PUBG Mobile</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tambahin gambar PUBG di atas -->
+    <img src="54c365acdc81ad0be683fc81ff908da2.jpg" alt="PUBG Mobile" style="width:250px; border-radius:10px; margin:20px auto; display:block;">
+
+    <h2>Masukkan Data Akun</h2>
+    <form id="pubgForm">
+      <label for="userId">PUBG ID:</label>
+      <input type="text" class="userId" placeholder="Masukkan PUBG ID" required>
+
+      <label for="nominal">Pilih Nominal UC:</label>
+      <select class="nominal" required>
+        <option value="">-- Pilih Paket --</option>
+        <option value="60 UC - Rp15.000">60 UC - Rp15.000</option>
+        <option value="325 UC - Rp75.000">325 UC - Rp75.000</option>
+        <option value="660 UC - Rp150.000">660 UC - Rp150.000</option>
+        <option value="1800 UC - Rp400.000">1800 UC - Rp400.000</option>
+      </select>
+
+      <button type="submit">Top Up Sekarang</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // aktifkan form PUBG
+    setupForm("pubgForm", "PUBG Mobile");
+  </script>
+</body>
+</html>
