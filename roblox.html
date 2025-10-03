@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopUp Roblox - Leonardo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Roblox</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="https://wa.me/6285608890414">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="assets/eb203036af2bf931259d9c2ae254b2cd.jpg" alt="Roblox Logo" class="banner">
+    <form id="robloxForm" class="topup-form">
+      <label for="robloxId">Masukkan Username Roblox:</label>
+      <input type="text" id="robloxId" placeholder="Contoh: Rasya123">
+
+      <label for="robloxNominal">Pilih Nominal:</label>
+      <select id="robloxNominal">
+        <option value="">-- Pilih --</option>
+        <option value="50 Robux">50 Robux</option>
+        <option value="100 Robux">100 Robux</option>
+        <option value="200 Robux">200 Robux</option>
+      </select>
+
+      <p id="robloxPrice"></p>
+      <button type="submit">Lanjutkan</button>
+    </form>
+    <p id="robloxSuccess" class="success"></p>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
