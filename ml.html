@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TopUp Mobile Legends - Leonardo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mobile Legends</h1>
+    <nav><a href="index.html">Home</a> <a href="https://wa.me/6285608890414" target="_blank">Contact</a></nav>
+  </header>
+
+  <main>
+    <img src="assets/8255033248d018b6c5f3d460b2deec16.jpg" alt="Miya - Mobile Legends" class="banner" />
+    <form id="mlForm" class="topup-form">
+      <label for="mlUserId">Masukkan User ID (contoh: 12345678)</label>
+      <input type="text" id="mlUserId" placeholder="Masukkan ID ML" required />
+
+      <label for="mlNominal">Pilih Nominal (Diamond)</label>
+      <select id="mlNominal" required>
+        <option value="">-- Pilih --</option>
+        <option value="50 Diamond">50 Diamond</option>
+        <option value="100 Diamond">100 Diamond</option>
+        <option value="200 Diamond">200 Diamond</option>
+      </select>
+
+      <p id="mlPrice" class="price-display"></p>
+      <button type="submit" class="btn">Lanjutkan via WhatsApp</button>
+    </form>
+
+    <p id="mlSuccess" class="success"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
